@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "name": "UpWork tracking",
+  "description": "Help you to find job",
+  "icons": {
+    "16": "resources/icon.png",
+    "32": "resources/icon.png",
+    "48": "resources/icon.png",
+    "128": "resources/icon.png"
+  },
+  "permissions": [
+    "alarms",
+    "background",
+    "notifications",
+    "storage",
+    "tabs",
+    "https://www.upwork.com/"
+  ],
+  "browser_action": {
+    "default_popup": "pages/popup.html"
+  },
+  "background": {
+    "scripts": [
+      "scripts/libs/jquery-3.4.1.min.js",
+      "scripts/libs/up-work-tracking-lib.js",
+      "scripts/background.js"
+    ]
+  },
+  "web_accessible_resources": [
+    "pages/list.html"
+  ]
+}
